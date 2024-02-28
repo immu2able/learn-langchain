@@ -5,8 +5,12 @@ An attempt to learn LangChain and LLM with Ollama.
 The following steps have to be done manually
 
 ### Infrastructure:
-* Create a GCP VM instance --  16 GB, 8 Cores, 50 GB storage - OS: Debian/Ubuntu
+* Create a GCP VM instance --  32 GB, 8 Cores, 100 GB storage - OS: Debian/Ubuntu
 * Setup firewall to allow http, https and other ports (like 8888 for jupyter notebooks)
+* Setup static IP
+* Verify ssh connectivity based on key from your local system -> [see this page for more info] (https://cloud.google.com/compute/docs/connect/standard-ssh#thirdpartytools)
+
+
 
 ### Software to be installed:
 
