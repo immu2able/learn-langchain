@@ -87,7 +87,7 @@ Since the Jupyter application is hosted in remote environment, it would be good 
 
 ```bash
 $ # ssh tunnel
-$ ssh -L 8888:localhost:8888 <user>@<vm-external-ip>
+$ ssh -L 8888:localhost:8888 [user]@[vm-external-ip]
 ```
 
 Post this the application can be reached from development computer's localhost:8888
