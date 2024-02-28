@@ -8,7 +8,7 @@ The following steps have to be done manually
 * Create a GCP VM instance --  32 GB, 8 Cores, 100 GB storage - OS: Debian/Ubuntu
 * Setup firewall to allow http, https and other ports (like 8888 for jupyter notebooks)
 * Setup static IP
-* Verify ssh connectivity based on key from your local system -> [see this page for more info] (https://cloud.google.com/compute/docs/connect/standard-ssh#thirdpartytools)
+* Verify ssh connectivity based on key from your local system -> [see this page for more info](https://cloud.google.com/compute/docs/connect/standard-ssh#thirdpartytools)
 
 
 
