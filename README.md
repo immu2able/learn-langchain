@@ -58,10 +58,11 @@ Install ollama by using the following command:
 $ curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Pull llama2 model by the following command:
+Pull llama2 and mistral models by the following command:
 
 ```bash
 $ ollama pull llama2
+$ ollama pull mistral
 ```
 
 ### Gitignore file
