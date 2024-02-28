@@ -51,13 +51,13 @@ $ pip install faiss-cpu
 Install ollama by using the following command:
 
 ```bash
-curl -fsSL https://ollama.com/install.sh | sh
+$ curl -fsSL https://ollama.com/install.sh | sh
 ```
 
 Pull llama2 model by the following command:
 
 ```bash
-ollama pull llama2
+$ ollama pull llama2
 ```
 
 ### Gitignore file
@@ -67,13 +67,13 @@ Create a gitignore file and add .venv/ as an entry
 Jupyter Lab notebook is useful for testing langchain code samples. Can be installed as follows:
 
 ```bash
-pip install jupyterlab
+$ pip install jupyterlab
 ```
 
 After the installation, it can be laucnhed as follows:
 
 ```bash
-jupyterlab lab
+$ jupyterlab lab
 ```
 
 This will launch jupyterlab application webserver at localhost:8888
@@ -82,8 +82,8 @@ This will launch jupyterlab application webserver at localhost:8888
 Since the Jupyter application is hosted in remote environment, it would be good to access it from the development computer. In order do to that, an SSL Tunnel can be opened as follows:
 
 ```bash
-# ssh tunnel
-ssh -L 8888:localhost:8888 <user>@<vm-external-ip>
+$ # ssh tunnel
+$ ssh -L 8888:localhost:8888 <user>@<vm-external-ip>
 ```
 
 Post this the application can be reached from development computer's localhost:8888
