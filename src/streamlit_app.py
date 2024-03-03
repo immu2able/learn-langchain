@@ -27,7 +27,7 @@ def generate_response(prompt):
 
 
 st.title("💬 Chatbot")
-st.caption("🚀 A streamlit chatbot powered by Ollama & Open Source LLM")
+st.caption("🚀 A streamlit chatbot powered by CLSS")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 

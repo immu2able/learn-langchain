@@ -65,8 +65,25 @@ $ ollama pull llama2
 $ ollama pull mistral
 ```
 
+## Setup Git
+### Install Git
+Install git as follows:
+```bash
+$ sudo apt install git
+```
+
+### Setup configs
+Setup configuration for git as follows:
+
+```bash
+$ git config --global user.name "FIRST_NAME LAST_NAME"
+$ git config --global user.email "MY_NAME@example.com"
+
+```
+
 ### Gitignore file
 Create a gitignore file and add .venv/ as an entry
+
 
 ### Jupyter Lab setup
 Jupyter Lab notebook is useful for testing langchain code samples. Can be installed as follows:
@@ -93,3 +110,35 @@ $ ssh -L 8888:localhost:8888 [user]@[vm-external-ip]
 
 Post this the application can be reached from development computer's localhost:8888
 
+
+### Streamlit Integration
+
+Streamlit provides a quick and easy way to integrate python based backend apps to a nice and functional UI. To get going, install the following dependencies
+
+```bash
+$ pip install streamlit
+$ pip install litellm
+```
+
+Pull Mistral 7B model as follows:
+
+```bash
+$ ollama pull mistral
+```
+
+Verify that model is pulled by checking if mistral is dowloaded and available by listing the available models in ollama
+
+```bash
+$ ollama list
+```
+
+Then start the streamlit app that is available as part of the src dir as follows:
+
+```bash
+$ streamlit run src/streamlit_app.py 
+```
+
+#### Configuring networks, VPC in Google compute instance
+Make sure we connect our VM to an external VPC (not the default VPC) that has a connectivity/route to the Internet gateway. You may have to stop the VM to disassociate the existing default VPC and add the new external VPC.
+
+Post this, add firewall rules in the external VPC for ssh and the ports used by streamlit. After this, we should be access the application at http://[Google_VM's_Ext_IP]:[Streamlit_Port]
